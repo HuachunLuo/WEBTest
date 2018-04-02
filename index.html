@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+    <header>
+        <meta lang="zh" charset="utf-8">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+
+/*
+            初始设置
+            1、所有标签外边框为0，内边框为0；
+            2、只显示一级菜单，隐藏二级菜单。
+            3、横向排列菜单。
+*/
+
+            .nav{
+                background-color: aqua;
+                height: 100px;
+                text-align: center;
+            }
+
+
+/*            隐藏二级菜单*/
+            .nav>ul>li>ul{
+                display: none;
+            }
+
+/*            一级菜单横向排列*/
+            .nav>ul>li{
+/*                list-style: none; 去掉菜单面的样式*/
+                width: 80px;
+                float:left;
+            }
+
+/*            设置 ul li 的样式;*/
+            .nav ul, .nav li{
+                list-style: none;
+            }
+/*            去掉标签的下划线。*/
+            .nav a{
+                text-decoration: none;
+            }
+
+/*            鼠标滑动到一级菜单上面时，显示二级菜单*/
+            .nav>ul>li:hover ul{
+                display: block;
+            }
+        </style>
+    </header>
+    <body>
+        <div class="nav">
+            <ul>
+                <li>
+                    <a href="#">首页</a>
+                    <ul>
+                        <li>第二级标题</li>
+                        <li>第二级标题</li>
+                        <li>第二级标题</li>
+                        <li>第二级标题</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">产品</a>
+                    <ul>
+                        <li>第二级标题</li>
+                        <li>第二级标题</li>
+                        <li>第二级标题</li>
+                        <li>第二级标题</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">新闻</a>
+                    <ul>
+                        <li>第二级标题</li>
+                        <li>第二级标题</li>
+                        <li>第二级标题</li>
+                        <li>第二级标题</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">社区</a>
+                    <ul>
+                        <li>第二级标题</li>
+                        <li>第二级标题</li>
+                        <li>第二级标题</li>
+                        <li>第二级标题</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="content"></div>
+        <div class="footer"></div>
+    </body>
+</html>
