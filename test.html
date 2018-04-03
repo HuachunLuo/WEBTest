@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div">
+            <H1 id="p1">这是一个测试的案例部分</H1>
+            <input type="text" id="age">
+    </div>
+    <script>
+
+            function mytext (myValue) {
+               for (var i = 0; i <=myValue; ++i) {
+                    console.log(i);
+               };
+            }
+
+           function getInnerHtml () {             
+            var x =document.getElementById("p1").innerHTML;
+                alert(x);
+           }
+            // console.log(mytext(100));
+           console.log(getInnerHtml());
+
+    </script>
+</body>
+</html>
